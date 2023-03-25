@@ -10,13 +10,13 @@ function App() {
         <div className='row'></div>
           <div className="col-md-8">
             {/* seccion de productos */}
-            <h1 className='text-center mt-4 mb-5'>lista de productos</h1>
-              <div className='row row-cols-1 row-cols-md-3 g-3'>
+            <h2 className='text-center mt-4 mb-5'>Mis Productos</h2>
+              <div className='row row-cols-1 row-cols-md-5 g-4'>
                 {
                   data.products.map(product=>(
                     <div key={product.id}>
-                      <img src={product.image} height={250} width="100%" />
-                      <h3>{product.name}</h3>
+                      <img src={product.image} height={150} width="100%" />
+                      <h4>{product.name}</h4>
                       <h5>${product.precio}</h5>
                       <button className='btn btn-primary'>AGREGAR</button>
                     </div>
