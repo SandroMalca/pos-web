@@ -36,5 +36,5 @@ function reducer(state,action) {
 // funcion para crear el store y envolver los componentes hijos
 export function StoreProvider({children}) {
     const [state,dispatch]=useReducer(reducer,initialState)
-    return <StoreProvider value={{state,dispatch}}>{children}</StoreProvider>
+    return <Store.Provider value={{state,dispatch}}>{children}</Store.Provider>
 }
